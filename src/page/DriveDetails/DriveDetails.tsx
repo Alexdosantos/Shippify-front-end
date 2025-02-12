@@ -18,7 +18,7 @@ const DriveDetails = () => {
         </S.DivProfileInfo>
       </S.DivProfile>
       <div>
-      <h3>Veículos relacionados a Alex Santos</h3>
+        <h3>Veículos relacionados a Alex Santos</h3>
         <Table />
       </div>
     </S.Container>

@@ -1,4 +1,3 @@
-
 import { GlobalStyle } from "./globalStyled";
 import Routers from "./routers/routers";
 

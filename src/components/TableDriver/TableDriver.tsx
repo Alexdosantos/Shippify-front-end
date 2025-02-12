@@ -166,7 +166,10 @@ const Table: React.FC = () => {
               <S.Td>{driver.status}</S.Td>
               <S.Td>{driver.created_at}</S.Td>
               <S.Td>
-                <ButtonProps name="Details" onClick={() => handleDetailsClick(driver.id)} />
+                <ButtonProps
+                  name="Details"
+                  onClick={() => handleDetailsClick(driver.id)}
+                />
               </S.Td>
             </tr>
           ))}

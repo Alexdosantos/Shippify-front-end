@@ -1,4 +1,3 @@
-
 import * as S from "./RegisterVehicle.Styled";
 
 const RegiterVehicle = () => {

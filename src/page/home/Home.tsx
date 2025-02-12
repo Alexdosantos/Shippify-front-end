@@ -13,16 +13,16 @@ const Home = () => {
 
   return (
     <>
-    <S.Container>
-    <Navigation/>
-      <S.DivButtonCreateVehicle>
-        <h3>Gerencie seus veiculos</h3>
-        <div>
-          <ButtonProps name="Criar veiculo" onClick={handleCreateVehicle} />
-        </div>
-      </S.DivButtonCreateVehicle>
-      <Table />
-    </S.Container>
+      <S.Container>
+        <Navigation />
+        <S.DivButtonCreateVehicle>
+          <h3>Gerencie seus veiculos</h3>
+          <div>
+            <ButtonProps name="Criar veiculo" onClick={handleCreateVehicle} />
+          </div>
+        </S.DivButtonCreateVehicle>
+        <Table />
+      </S.Container>
     </>
   );
 };
