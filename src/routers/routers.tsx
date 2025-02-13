@@ -1,8 +1,8 @@
 import Home from "../page/home/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RegiterVehicle from "@/page/regiterVehicle/RegiterVehicle";
-import Drivers from "@/page/Drivers/Drivers";
-import DriveDetails from "@/page/DriveDetails/DriveDetails";
+import RegiterVehicle from "@/page/regiterVehicle/regiterVehicle";
+import Drivers from "@/page/drivers/drivers";
+import DriveDetails from "@/page/driveDetails/driveDetails";
 
 const routers = () => {
   return (

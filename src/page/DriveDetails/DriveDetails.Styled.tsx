@@ -28,3 +28,7 @@ export const Span = styled.span`
   margin-top: -25px; // Ajuste conforme necessário
   color: #777;
 `;
+
+export const DivTable = styled.div`
+  margin: 5% 0 5% 0;
+`;

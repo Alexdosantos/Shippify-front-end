@@ -1,11 +1,18 @@
-import ButtonProps from "@/components/ButtonProps/ButtonProps";
-import Table from "@/components/Table/Table";
 import * as S from "./Home.Styled";
+import ButtonProps from "@/components/ButtonProps/ButtonProps";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigate/Navigate";
+import { useQuery } from "@tanstack/react-query";
+import getAllVehicle from "@/service/vehicleApi/getAllVehicle";
+import TableVehicle from "@/components/TableVehicle/TableVehicle";
 
 const Home = () => {
   const navigate = useNavigate();
+
+  const { data: dataGetAllVehicle, isLoading } = useQuery({
+    queryKey: ["vehicle"],
+    queryFn: getAllVehicle,
+  });
 
   const handleCreateVehicle = () => {
     navigate("/regiterVehicle");
@@ -16,12 +23,12 @@ const Home = () => {
       <S.Container>
         <Navigation />
         <S.DivButtonCreateVehicle>
-          <h3>Gerencie seus veiculos</h3>
+          <h3>Vehicle list</h3>
           <div>
-            <ButtonProps name="Criar veiculo" onClick={handleCreateVehicle} />
+            <ButtonProps name="Create vehicle" onClick={handleCreateVehicle} />
           </div>
         </S.DivButtonCreateVehicle>
-        <Table />
+        <TableVehicle data={dataGetAllVehicle} isLoading={isLoading} />
       </S.Container>
     </>
   );

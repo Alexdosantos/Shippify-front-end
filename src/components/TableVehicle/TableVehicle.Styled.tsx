@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const TableWrapper = styled.div`
   width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
   overflow-x: auto;
   display: flex;
   justify-content: center;
